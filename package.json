@@ -4,14 +4,17 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prod": "yarn build && yarn start",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "11.1.2",
+    "@agoric/install-ses": "^0.5.27",
+    "next": "file:../next.js/packages/next",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "ses": "^0.14.3"
   },
   "devDependencies": {
     "@types/react": "17.0.26",
